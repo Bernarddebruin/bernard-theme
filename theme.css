@@ -1,0 +1,26 @@
+#qv-toolbar-container > div, #qv-toolbar-container > div > div,
+#qv-toolbar-container > div > div > div,
+#qv-toolbar-container > div > div > div > button,
+#qv-toolbar-container > div > div > div > div,
+#qv-toolbar-container > div > div > div > div > div,
+#qv-toolbar-container > div > div > div > div > div > button,
+#qv-toolbar-container > div > div > div > div > button,
+.qv-app-info-holder span
+{
+  background-color: #006266!important;
+  color: #fff!important;
+  background-image:unset!important;
+  border: none!important;
+}
+
+
+.qv-selections-pager *{
+  background: #eee!important;
+  color: #555!important;
+  background-image:unset;
+  border-bottom: none!important;
+}
+
+.qv-inner-object {
+  font-family : "Trebuchet MS";
+}
