@@ -2,7 +2,8 @@ var json = {
     "_inherit": true,
     variables,
     pallets,
-    mesCol
+    mesCol,
+    font
   }
 
 
@@ -59,7 +60,8 @@ var mesCol =  "scales": [{
   }]
 
 
-    "color": "@cGrey60",
+
+var font =  "color": "@cGrey60",
     "font": "Comic Sans MS",
     "fontSize": "12px",
     "dataColors": {
