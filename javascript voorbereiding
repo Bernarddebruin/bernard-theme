@@ -1,19 +1,24 @@
-var json = {
-    "_inherit": true,
-    variables,
-    pallets,
-    mesCol,
-    font
-  }
-
+var h1Size
+var h2Size
+var h3Size
+var h4Size
+var h5Size
+var mainFontSize
+var primColor1
+var primColor2
+var primColor3
+var primColor4
+var primColor5
+var dimColInput
+var mesColInput
 
 var variables =
     "_variables": {
-      "@cPrim1": "#6F1E51",
-      "@cPrim2": "#5758BB",
-      "@cPrim3": "#1B1464",
-      "@cPrim4": "#006266",
-      "@cPrim5": "#EA2027",
+      "@cPrim1": primColor1,
+      "@cPrim2": primColor2,
+      "@cPrim3": primColor3,
+      "@cPrim4": primColor4,
+      "@cPrim5": primColor5,
       "@cWhite": "#FFF",
       "@cBlack": "#000",
       "@cGreyDark": "#3D3C3C",
@@ -21,14 +26,13 @@ var variables =
       "@cGrey60": "#919191",
       "@cGrey40": "#C1C1C1",
       "@cGrey20": "#EFEFEF",
-      "@h1": "2.25em",
-      "@h2": "2em",
-      "@h3": "1.75em",
-      "@h4": "1.5em",
-      "@h5": "1.25em",
-      "@font": "1em"
+      "@h1": h1Size,
+      "@h2": h2Size,
+      "@h3": h3Size,
+      "@h4": h4Size,
+      "@h5": h5Size,
+      "@font": mainFontSize
     },
-
 
 var pallets =
     "palettes": {
@@ -59,7 +63,23 @@ var mesCol =  "scales": [{
       "scale": ["#6F1E51", "#FFF", "#12CBC4"]
   }]
 
-
+var chartFont = "object": {
+    "title": {
+        "main": {
+            "color": "@cGrey40",
+            "fontSize": "@h2"
+        },
+        "subTitle": {
+            "color": "@cGrey60",
+            "fontSize": "@h4"
+        },
+        "footer": {
+            "color": "@cWhite",
+            "fontSize": "@font",
+            "backgroundColor": "@cAqua"
+        }
+    }
+}
 
 var font =  "color": "@cGrey60",
     "font": "Comic Sans MS",
@@ -71,21 +91,14 @@ var font =  "color": "@cGrey60",
         "cssRef": "theme.css",
         "classRef": "my-theme"
     }],
-    "object": {
-        "title": {
-            "main": {
-                "color": "@cGrey40",
-                "fontSize": "@h2"
-            },
-            "subTitle": {
-                "color": "@cGrey60",
-                "fontSize": "@h4"
-            },
-            "footer": {
-                "color": "@cWhite",
-                "fontSize": "@font",
-                "backgroundColor": "@cAqua"
-            }
-        }
-    }
+    chartFont
 }
+
+
+var json = {
+    "_inherit": true,
+    variables,
+    pallets,
+    mesCol,
+    font
+  }
